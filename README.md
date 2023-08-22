@@ -11,6 +11,7 @@
 1. Rename the `.env.example` file to `.env`.
 2. Fill out the `.env` file with the required information, which can be obtained from the [DEVELOPER PORTAL](https://discord.com/developers/applications).
 3. Open a terminal at the root of the project folder and execute the command `npm ci`.
+4. Run the bot `node .`
 
 ---
 
@@ -52,4 +53,4 @@ Happy coding!
 - Discord : oxyrobit
 
 ## Besoin d'aide ?
-- [Rejoingnez le serveur S/ash FR et ditent "Oxyrobit"](https://discord.gg/fr)
+- [Rejoignez le serveur S/ash FR et ditent "Oxyrobit"](https://discord.gg/fr)
