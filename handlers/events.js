@@ -4,12 +4,12 @@ const path = require("path");
 
 module.exports = function (client) {
     const eventsDir = path.join(__dirname, '../events');
-    const folders = fs.readdirSync(eventsDir, { recursive: true, withFileTypes: true })
+    const folders = fs.readdirSync(eventsDir, { withFileTypes: true })
         .filter(dirent => dirent.isDirectory())
         .map(dirent => dirent.name);
 
     folders.forEach(folder => {
-        const files = fs.readdirSync(path.join(eventsDir, folder));
+        const files = fs.readdirSync(path.join(eventsDir, folder), {encoding: 'utf-8', recursive: true});
         files.forEach(file => {
             if (!file.endsWith('.js'))
                 return;
